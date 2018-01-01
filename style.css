@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@@font-face {
+  font-family: 'NanumSquare';
+  src: url("../fonts/nanum-square/NanumSquareRegular.ttf") format("truetype"), src: url("../fonts/nanum-square/NanumSquareLight.ttf") format("truetype"), src: url("../fonts/nanum-square/NanumSquareBold.ttf") format("truetype"), src: url("../fonts/nanum-square/ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {margin: 0; padding: 0;}
+
+/* set cover the whole page */
+html, body {width: 100%; height: 100%;}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-size: 24px;
+  position: relative;
+  font-family: "NanumSquare";
+  background: url(background.jpg) center center/cover no-repeat;
+}
+
+.logo,
+.content,
+.copy {
+  position: absolute;
+}
+
+.logo,
+.copy {
+  left: 40px;
+}
+
+.logo {
+  top: 20px;
+}
+
+.content {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -100px;
+}
+
+.content h2 {
+  font-size: 2em;
+}
+
+.content hr {
+  width: 40%;
+  margin: 30px auto;
+}
+
+.content p {
+  font-size: 30px;
+}
+
+.copy {
+  bottom: 40px;
+}
+
+button{
+  margin-top: 20px;
+  background:#607D8B;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:40px;
+  font-size:1em;
+  padding:0 1em 0 40px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#607D8B;
+  color:#FFFFFF;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #FFFFFF;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+.set_start {
+  text-decoration: none;
+  text-shadow: none;
+  text-decoration-color: none;
+  float: right;
+  margin-right: 40px;
+  margin-top: -40px;
+}

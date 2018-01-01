@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hello 2018</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="안녕 2018" />
+	<meta name="keywords" content="안녕 2018" />
+	<meta name="author" content="JUNEYOUNG KANG" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Hello 2018"/>
+	<meta property="og:image" content="thumbnail.png"/>
+	<meta property="og:url" content="http://hello2018.dothome.co.kr"/>
+	<meta property="og:site_name" content="Hello 2018"/>
+	<meta property="og:description" content="지금 바로 Hello 2018을 시작페이지로 설정해보세요!"/>
+	<meta name="twitter:title" content="Hello 2018" />
+	<meta name="twitter:image" content="thumbnail.png" />
+	<meta name="twitter:url" content="http://hello2018.dothome.co.kr" />
+	<meta name="twitter:card" content="" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<script type="text/javascript" src="index.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="style.css">
+
+	<style>
+	* {
+box-sizing: border-box;
+}
+
+body {
+background: #2A2E37;
+}
+
+.search {
+width: 100px;
+height: 100px;
+top: 60%;
+margin: 0px auto 0px;
+background-color: #607D8B;
+position: relative;
+overflow: hidden;
+transition: all 0.5s ease;
+}
+
+.search:before {
+content: '';
+display: block;
+width: 3px;
+height: 100%;
+position: relative;
+background-color: #FFFFFF;
+transition: all 0.5s ease;
+}
+
+.search.open {
+width: 420px;
+}
+
+.search.open:before {
+height: 60px;
+margin: 20px 0 20px 30px;
+position: absolute;
+}
+
+.search-box {
+width: 100%;
+height: 100%;
+box-shadow: none;
+border: none;
+background: transparent;
+color: #fff;
+padding: 20px 100px 20px 45px;
+font-size: 40px;
+}
+
+.search-box:focus {
+outline: none;
+}
+
+.search-button {
+width: 100px;
+height: 100px;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+padding: 20px;
+cursor: pointer;
+}
+
+.search-icon {
+width: 40px;
+height: 40px;
+border-radius: 40px;
+border: 3px solid #FFFFFF;
+display: block;
+position: relative;
+margin-left: 5px;
+transition: all 0.5s ease;
+}
+
+.search-icon:before {
+content: '';
+width: 3px;
+height: 15px;
+position: absolute;
+right: -2px;
+top: 30px;
+display: block;
+background-color: #FFFFFF;
+transform: rotate(-45deg);
+transition: all 0.5s ease;
+}
+
+.search-icon:after {
+content: '';
+width: 3px;
+height: 15px;
+position: absolute;
+right: -12px;
+top: 40px;
+display: block;
+background-color: #FFFFFF;
+transform: rotate(-45deg);
+transition: all 0.5s ease;
+}
+
+.open .search-icon {
+margin: 0;
+width: 60px;
+height: 60px;
+border-radius: 60px;
+}
+
+.open .search-icon:before {
+transform: rotate(52deg);
+right: 22px;
+top: 23px;
+height: 18px;
+}
+
+.open .search-icon:after {
+transform: rotate(-230deg);
+right: 22px;
+top: 13px;
+height: 18px;
+}
+
+</style>
+</head>
+
+<body>
+  <section class="cover">
+    <h1 class="logo">Hello 2018</h1>
+
+    <div class="content">
+      <h2>새해 복 많이 받으세요!</h2>
+      <hr>
+      <p id="count"></p>
+    </div>
+
+		<div class="search">
+  			<input type="text" name="q" class="search-box" />
+  			<span class="search-button">
+  		  	<span class="search-icon"></span>
+  			</span>
+		</div>
+
+
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="search.js"></script>
+
+    <p class="copy">Copyright by Juneyoung Kang, Image from Apple</p>
+
+		<button href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://hello2018.dothome.co.kr');">시작페이지로 설정(IE)</button>
+
+	</section>
+</body>
+</html>
