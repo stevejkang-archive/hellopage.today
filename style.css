@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
-@@font-face {
-  font-family: 'NanumSquare';
-  src: url("../fonts/nanum-square/NanumSquareRegular.ttf") format("truetype"), src: url("../fonts/nanum-square/NanumSquareLight.ttf") format("truetype"), src: url("../fonts/nanum-square/NanumSquareBold.ttf") format("truetype"), src: url("../fonts/nanum-square/ExtraBold.ttf") format("truetype");
+@font-face {
+  font-family: 'NanumSquareR';
+  src: url('/fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),  url('/fonts/NanumSquareR.woff') format('woff'), url('/fonts/NanumSquareR.ttf')  format('truetype'), url('/fonts/NanumSquareR.svg#NanumSquareR') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 
 * {margin: 0; padding: 0;}
 
@@ -19,7 +20,7 @@ html, body {width: 100%; height: 100%;}
   font-size: 24px;
   position: relative;
   font-family: "NanumSquare";
-  background: url(background.jpg) center center/cover no-repeat;
+  background: url(images/background.jpg) center center/cover no-repeat;
 }
 
 .logo,
