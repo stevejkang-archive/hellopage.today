@@ -44,7 +44,7 @@ function dpTime(){
     if (days == 6){
       days = "토요일";
     }
-    if (days == 7){
+    if (days == 0){
       days = "일요일";
     }
     document.getElementById("count").innerHTML = months + "월 " + dates + "일 " + days + " " + ampm + hours + ":" + minutes + ":" + seconds;
