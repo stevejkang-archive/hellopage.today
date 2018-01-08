@@ -5,7 +5,7 @@
 ![1_00](./images/1_00.png)
 
 ### Webpage
-[hello2018.dothome.co.kr](http://hello2018.dothome.co.kr)
+[hello2018.me](https://hello2018.me)
 
 ### Features
 - 시작페이지로 설정
@@ -16,6 +16,13 @@
 
 ### To-Do
 - Wallpaper, 문구 커스터마이징
+
+### Contributor
+@ByeongminBae <byeongmin0322@gmail.com> >> Code review <br>
+@JunhoYeo >> Issue (#1) <br>
+@lastBranch02 >> Pull request (#2) <br>
+@park012241 >> Issue (#3) <br>
+@park012241 >> Domain and Hosting <br>
 
 ### Developer
 Juneyoung KANG <juneyoung_kang@outlook.com>

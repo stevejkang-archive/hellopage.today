@@ -12,24 +12,26 @@
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="Hello 2018"/>
 	<meta property="og:image" content="/images/thumbnail.png"/>
-	<meta property="og:url" content="http://hello2018.dothome.co.kr"/>
+	<meta property="og:url" content="https://hello2018.me"/>
 	<meta property="og:site_name" content="Hello 2018"/>
 	<meta property="og:description" content="지금 바로 Hello 2018을 시작페이지로 설정해보세요!"/>
 	<meta name="twitter:title" content="Hello 2018" />
 	<meta name="twitter:image" content="/images/thumbnail.png" />
-	<meta name="twitter:url" content="http://hello2018.dothome.co.kr" />
+	<meta name="twitter:url" content="https://hello2018.me" />
 	<meta name="twitter:card" content="" />
+
+	<link rel="stylesheet" href="/fonts/NanumSquare/nanumsquare.css" type="text/css" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
 
 	<script>
 		jQuery(document).ready(function($) {
 			$.ajax({
 				// 결과를 한글로 받을 수 있다.
-			url : "http://api.wunderground.com/api/42087dade24aac1a/geolookup/conditions/lang:KR/q/Korea/Seoul.json",
+			url : "https://api.wunderground.com/api/42087dade24aac1a/geolookup/conditions/lang:KR/q/Korea/Seoul.json",
 			dataType : "jsonp",
 			success : function(parsed_json) {
 				 // location
@@ -172,7 +174,7 @@
 
     <p class="copy">이 웹페이지는 PC 화면에 최적화되어 있습니다.<br /><br />version 1.00 (release 2018.01.08)<br>Copyright by Juneyoung Kang 2018 (Juneyoung Dev Studio)</p>
 
-		<button href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://hello2018.dothome.co.kr');">시작페이지로 설정(IE)</button>
+		<button href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('https://hello2018.me');">시작페이지로 설정(IE)</button>
 
 	</section>
 	<script src="index.js"></script>
