@@ -2,7 +2,18 @@
 
 @import url("//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css");
 
-* {margin: 0; padding: 0;font-family: "NanumSquare"}
+@font-face {
+  font-family: NanumSquare;
+  src: local(NanumSquareR),
+       local(NanumSquare),
+       url(./fonts/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(./fonts/NanunSquare/NanumSquareR.woff) format('woff'),
+       url(./fonts/NanumSquare/NanumSquareR.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {margin: 0; padding: 0;font-family: "NanumSquare", sans-serif;}
 
 /* set cover the whole page */
 html, body {width: 100%; height: 100%;}
@@ -31,6 +42,7 @@ html, body {width: 100%; height: 100%;}
 
 .logo {
   top: 20px;
+  font-family: "NanumSquare";
 }
 
 .content {
@@ -61,6 +73,7 @@ html, body {width: 100%; height: 100%;}
 
 button{
   margin-top: 120px;
+  font-family: "NanumSquare";
   background:#607D8B;
   color:#fff;
   border:none;
