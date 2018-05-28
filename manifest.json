@@ -1,0 +1,20 @@
+{
+  "name": "Hello 2018",
+  "version": "1.00",
+  "manifest_version": 2,
+  "description": "Set Hello 2018 as your home page today!",
+  "homepage_url": "https://hello2018.me",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_security_policy": "script-src 'self' https://api.wunderground.com/api/; object-src 'self';",
+  "content_scripts": [ {
+    "js": [ "./js/jquery/jquery.min.js", "index.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }],
+  "permissions": [
+    "http://api.wunderground.com/api/", "http://www.googletagmanager.com/",
+    "webRequest",
+    "*://*.wunderground.com/*"
+  ]
+}

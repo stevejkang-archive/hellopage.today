@@ -25,13 +25,23 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 
-	<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="./js/jquery/jquery.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400273-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-112400273-1');
+	</script>
 
 	<script>
 		jQuery(document).ready(function($) {
 			$.ajax({
 				// 결과를 한글로 받을 수 있다.
-			url : "https://api.wunderground.com/api/42087dade24aac1a/geolookup/conditions/lang:KR/q/Korea/Seoul.json",
+			url : "http://api.wunderground.com/api/42087dade24aac1a/geolookup/conditions/lang:KR/q/Korea/Seoul.json",
 			dataType : "jsonp",
 			success : function(parsed_json) {
 				 // location

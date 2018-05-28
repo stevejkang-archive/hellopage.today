@@ -1,4 +1,4 @@
-function dpTime(){ //wtf
+function dpTime(){
   let now = new Date();
   let hours = now.getHours();
   let minutes = now.getMinutes();
