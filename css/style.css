@@ -17,8 +17,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR', sans-serif !important;
-  text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+  font-family: 'NanumSquare', sans-serif !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 2.5px #fffce2;
 }
 
 /* set cover the whole page */
@@ -35,7 +36,7 @@ body {
   color: #FFF;
   font-size: 24px;
   position: relative;
-  background: url(../img/bg.jpg) center center/cover no-repeat;
+  background: linear-gradient(180deg,#000 30%,#131c27 70%,#202948);
 }
 
 .logo,
