@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/*
+* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+   font-family: 'Noto Sans KR';
+   src: url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+        url(../fonts/NotoSans-Regular.woff) format('woff'),
+        url(../fonts/NotoSans-Regular.otf) format('opentype'),
+        url(../fonts/NotoSans-Regular.ttf) format('truetype'),
+        url(../fonts/NotoSans-Regular.eot) format('embedded-opentype'),
+        url(../fonts/NotoSans-Regular.svg) format('svg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif !important;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+}
+
+/* set cover the whole page */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-size: 24px;
+  position: relative;
+  background: url(../img/bg.jpg) center center/cover no-repeat;
+}
+
+.logo,
+.contents,
+.copy {
+  position: absolute;
+}
+
+.logo,
+.copy {
+  left: 40px;
+  margin-right: 40px;
+}
+
+.logo {
+  top: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contents {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -100px;
+}
+
+.contents h2 {
+  font-size: 2em;
+}
+
+.contents hr {
+  width: 40%;
+  margin: 30px auto;
+}
+
+.contents p {
+  font-size: 1em;
+}
+
+.copy {
+  bottom: 40px;
+  font-size: 15px;
+}
+
+.set_start {
+  text-decoration: none;
+  text-shadow: none;
+  text-decoration-color: none;
+  float: right;
+  margin-right: 40px;
+  margin-top: -40px;
+}
+
+.settings {
+  position: fixed;
+  bottom: 0;
+  margin: 40px;
+  right: 0;
+}
+
+body .search {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+body .search_bar {
+  width: 280px;
+  position: relative;
+  margin: 0 auto;
+}
+
+body .search_bar input[type="text"] {
+  width: 15px;
+  background: transparent;
+  -webkit-transition: border 0.3s 0s, width 0.2s 0.3s cubic-bezier(0.225, 0.01, 0.475, 1.01), text-indent 0.2s 0.3s;
+  transition: border 0.3s 0s, width 0.2s 0.3s cubic-bezier(0.225, 0.01, 0.475, 1.01), text-indent 0.2s 0.3s;
+  padding: 20px;
+  border-color: #fff;
+  text-indent: 30px;
+  outline: none;
+  border: 0px solid #fff;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+body .search_bar ::-webkit-input-placeholder {
+  /* Safari, Chrome and Opera */
+  color: #fff;
+  font-weight: 400;
+}
+
+body .search_bar ::-moz-input-placeholder {
+  /* Safari, Chrome and Opera */
+  color: #fff;
+  font-weight: 400;
+}
+
+body .search_bar ::-o-input-placeholder {
+  /* Safari, Chrome and Opera */
+  color: #fff;
+  font-weight: 400;
+}
+
+body .search_bar input[type="checkbox"] {
+  display: none;
+}
+
+body .search_bar input[type="checkbox"]:checked+label+input {
+  width: 280px;
+  border: 2.5px solid #fff;
+  text-indent: 0px;
+}
+
+body .search_bar input[type="checkbox"]:checked+label i {
+  right: 0px;
+  -webkit-transform: translateY(-50%) translateX(50%) rotate(360deg) scale(0);
+  transform: translateY(-50%) translateX(50%) rotate(360deg) scale(0);
+  color: #fff;
+}
+
+body .search_bar input[type="checkbox"]:checked+label .last {
+  left: 220px;
+  -webkit-transform: translateY(-50%) rotate(360deg) scale(1);
+  transform: translateY(-50%) rotate(360deg) scale(1);
+}
+
+body .search_bar input[type="checkbox"]:checked+label p {
+  top: 50%;
+  -webkit-transition: all .3s .45s;
+  transition: all .3s .45s;
+}
+
+body .search_bar input[type="checkbox"]:not(checked)+label p {
+  top: -50%;
+  -webkit-transition: all .3s 0s;
+  transition: all .3s 0s;
+}
+
+body .search_bar .last {
+  -webkit-transform: translateY(-50%) rotate(0deg) scale(0);
+  transform: translateY(-50%) rotate(0deg) scale(0);
+}
+
+body .search_bar i {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(50%) rotate(0deg) scale(1);
+  transform: translateY(-50%) translateX(50%) rotate(0deg) scale(1);
+  cursor: pointer;
+  z-index: 2;
+  margin: auto;
+  border-radius: 4px;
+  width: 56px;
+  right: 50%;
+  height: 54px;
+  background: transparent;
+  -webkit-transition: right .3s .3s, color .3s, -webkit-transform .3s .3s;
+  transition: right .3s .3s, color .3s, -webkit-transform .3s .3s;
+  transition: right .3s .3s, transform .3s .3s, color .3s;
+  transition: right .3s .3s, transform .3s .3s, color .3s, -webkit-transform .3s .3s;
+  line-height: 60px;
+  color: #fff;
+}
+
+body .search_bar i:hover {
+  color: #fff;
+}
+
+body .search_bar p {
+  position: absolute;
+  margin: 0;
+  right: 52px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 30px;
+  top: -50%;
+  -webkit-transform: translateY(-50%) rotate(0deg) scale(1);
+  transform: translateY(-50%) rotate(0deg) scale(1);
+}
